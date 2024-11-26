@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shikher's Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100%;
+            color: white;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        /* Image slider for background */
+        .slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            animation: slide 30s infinite;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 1;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            25% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            55% {
+                opacity: 1;
+            }
+
+            75% {
+                opacity: 1;
+            }
+
+            80% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Navigation bar */
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        /* Section styling */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-section {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .projects-section {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-section {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Card styling for project showcase */
+        .projects-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.6);
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        .card a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Image Slider (Background) -->
+    <div class="slider">
+        <img src="image1.jpg" alt="Tech Image 1">
+        <img src="image2.jpg" alt="Tech Image 2">
+        <img src="image3.jpg" alt="Tech Image 3">
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h1>About Me</h1>
+        <p>Hello, I'm Shikher, a passionate web and app developer.</p>
+        <div>
+            <h2>Pros</h2>
+            <p><!-- Edit your pros here --> I'm detail-oriented, hardworking, and always eager to learn new
+                technologies.</p>
+            <h2>Cons</h2>
+            <p><!-- Edit your cons here --> Sometimes I spend too much time refining code, but I always strive for
+                perfection.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h1>My Projects</h1>
+        <div class="projects-cards">
+            <div class="card">
+                <h3>Women Safety Analysts System</h3>
+                <p>It is a complete women safety app where a girl or women has to save the phone no.s of her
+                    relatives,and whenever she is
+                    in trouble ,she can tap the power button three times and then an emrgency message with live location
+                    of her is sent to
+                    her relatives and a phone call is also made to her first relative even when the phone is locked,no
+                    need to unlock the
+                    phone and open the app.If she is in more trouble and wants to deviate the culprit then she can tap
+                    the power button 3
+                    more times to start a siren alarm.</p>
+                <a href="link_to_project1" target="_blank">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Tour and Travels</h3>
+                <p>A description of this project goes here. It could be a website or app.</p>
+                <a href="link_to_project2" target="_blank">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Agricultural events</h3>
+                <p>A description of this project goes here. It could be a website or app.</p>
+                <a href="link_to_project3" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h1>Contact Me</h1>
+        <p>If you'd like to collaborate or have any inquiries, feel free to reach out!</p>
+        <p>Email: shikherrai0@gmail.com</p>
+        <p>Mobile: 8602428012</p>
+    </section>
+
+    <script>
+        // Optional: You can add more interactive JS code here
+    </script>
+</body>
+
+</html>
